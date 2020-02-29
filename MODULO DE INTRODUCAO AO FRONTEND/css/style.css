@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&display=swap');
+
+:root {
+  --color-rocket: #7159c1;
+}
+
+body {
+  background: #282a36;
+  color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro';
+}
+
+header {
+  padding: 30px;
+  border-bottom: 1px solid #333;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 20px 35px;
+  line-height: 28px;
+  transition: .2s;
+}
+
+.links a:hover {
+  color: chartreuse;
+}
+
+nav.menu {
+  width: 505px;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#wrapper {
+  text-align: center;
+  padding: 32px;
+}
+
+#wrapper img {
+  height: 300px;
+  border-radius: 50%;
+  border: 5px solid #50fa7b;
+  margin-top: 32px;
+  margin-bottom: 10px;
+  transition: 400ms;
+  box-shadow: 2px 2px 40px rgba(0,0,0,0.71);
+}
+
+#wrapper img:hover {
+  box-shadow: 3px 2px 40px transparent;
+}
+
+#wrapper h1 {
+  font-size: 42px;
+  line-height: 52px;
+  font-weight: bold;
+}
+
+#wrapper h2 {
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: normal;
+  margin-top: -25px;
+  opacity: 0.5;
+}
+
+#wrapper p {
+  max-width: 500px;
+  margin: 10px auto;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.social {
+  width: 388px;
+  margin: 0 auto;
+}
+
+.social a {
+  border-bottom: 1px solid #50fa7b;
+  border-radius: 5px;
+  transition: 400ms;
+}
+
+.social a:hover {
+  box-shadow: 2px 2px 40px rgba(0,0,0,0.41);
+}
+
+/* CARDS */
+
+.cards {
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  margin-bottom: 60px;
+}
+
+.card {
+  background-color: var(--color-rocket);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.card__image-container img {
+  width: 100%;
+}
+
+.card__content ,
+.card__info {
+  padding: 24px;
+}
+
+
+.card__info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.card__price {
+  background-color: var(--color-rocket);
+  filter: brightness(90%);
+  padding: 5px 20px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+/* === MODAL === */
+
+.modal-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal {
+  background-color: white;
+  width: 90%;
+  height: 90%;
+  margin: 5vh auto;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.modal .close-modal {
+  color: black;
+  position: absolute;
+  right: 0;
+  margin: 20px;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 1);
+  z-index: 1;
+  border-radius: 50%;
+  padding: 10px 10px 5px 10px;
+  box-shadow: 4px 4px 40px rgba(0,0,0, 100);
+}
+
+/* === MODAL.ACTIVE === */
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+iframe {
+  width: 100%;
+  height: 101%;
+  position: absolute;
+}

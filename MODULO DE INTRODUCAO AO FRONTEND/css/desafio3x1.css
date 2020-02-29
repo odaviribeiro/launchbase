@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: #282a36;
+  color: white;
+  font-family: 'Roboto';
+}
+
+header {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  padding: 30px;
+}
+
+nav {
+  width: 527px;
+  margin: 0 auto;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  transition: 700ms;
+}
+
+nav>a:hover {
+  color: greenyellow;
+  transform: translateY(-24px) !important;
+}
+
+section.sobre {
+  text-align: center;
+}
+
+section.sobre h1 {
+  font-size: 35px;
+}
+
+section.sobre h2 {
+  opacity: 0.8;
+}
+
+section.sobre li {
+  text-align: left;
+  display: inline-block;
+  padding: 10px 20px 10px 20px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+section.sobre li:hover {
+  color: greenyellow;
+}
+
+section.sobre ul {
+  padding: 0;
+}
+
+section.sobre p {
+  width: 600px;
+  margin: 0 auto;
+  line-height: 26px;
+}
+
+section.sobre img {
+  border-radius: 50%;
+  margin: 60px auto 0px auto;
+  border: 5px solid greenyellow;
+  transition: 0.6s;
+}
+
+section.sobre img:hover {
+  border: 5px solid transparent;
+  box-shadow: 2px 2px 40px rgba(0,0,0,0.41);
+}
+
+.socials-h2 {
+
+}
+
+.socials {
+  color: white;
+  display: inline-block;
+  padding: 20px;
+  text-decoration: none;
+  border-bottom: 2px solid greenyellow;
+  border-radius: 5px;
+  margin-bottom: 50px;
+  transition: 0.4s;
+}
+
+.socials:hover {
+  box-shadow: 2px 2px 40px rgba(0,0,0,0.41);
+}
